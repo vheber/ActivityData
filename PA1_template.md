@@ -15,7 +15,7 @@ totsteps <- tapply(dt$steps, dt$date, sum, na.rm = TRUE)
 hist(totsteps)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)
+![](unnamed-chunk-2-1.png)
 
 ```r
 mean(totsteps)
@@ -43,7 +43,7 @@ plot(dailydf$mean.steps, type = "n", xlab = "Interval", ylab = "Mean Steps", mai
 lines(dailydf$mean.steps)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)
+![](unnamed-chunk-3-1.png)
 
 Interval 835 contains the max average steps:
 
@@ -83,7 +83,7 @@ totsteps1 <- tapply(dt1$newsteps, dt1$date, sum)
 hist(totsteps1)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)
+![](unnamed-chunk-7-1.png)
 
 ```r
 mean(totsteps1)
@@ -133,6 +133,6 @@ plot(wdDailydf$mean.steps, type = "n", xlab = "Interval", ylab = "Mean Steps", m
 lines(wdDailydf$mean.steps)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)
+![](unnamed-chunk-9-1.png)
 
 Weekends have consistently higher step counts throughout the day, but Weekdays have a spike around interval 100.
